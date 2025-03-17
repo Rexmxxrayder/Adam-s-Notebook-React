@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import MeshLoader from "./MeshLoader";
+import MeshLoader from "./GLTFMeshLoader";
 
 interface VisualizerProps {
     fbxFile: File;
@@ -20,8 +20,8 @@ const Visualizer = ({ fbxFile, width = 300, height = 150 }: VisualizerProps) => 
             <color attach="background" args={['#F0F0F0']} />
 
             <OrbitControls enableZoom enablePan enableRotate />
-            
-            <MeshLoader fbxFile={fbxFile} />
+
+            <MeshLoader file={fbxFile} />
         </Canvas>
     )
 }

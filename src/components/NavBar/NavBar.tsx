@@ -8,6 +8,10 @@ const NavBar = () => {
                     <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
                     Adam's Notebook
                     </a>
+
+                    <button>
+                        <img src={"assets/menu.svg"} alt="toggle" className='w-6 h-6'/>
+                    </button>
                 </div>
             </div>
         </header>

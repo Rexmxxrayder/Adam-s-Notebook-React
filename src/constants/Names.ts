@@ -1,4 +1,6 @@
-export const Names = {
+const Names = {
     
 
 }
+
+export default Names;
